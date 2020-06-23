@@ -1,0 +1,72 @@
+
+// (The Rectangle class) Following the example of the Circle class in Section 9.2, design a class named Rectangle to represent a rectangle. The class contains:
+//■ Two double data fields named width and height that specify the width and height of the rectangle. The default values are 1 for both width and height.
+
+//■ A no-arg constructor that creates a default rectangle.
+//■ A constructor that creates a rectangle with the specified width and height.
+
+//■ A method named getArea() that returns the area of this rectangle.
+//■ A method named getPerimeter() that returns the perimeter.
+
+//Draw the UML diagram for the class then implement the class. Write a test pro- gram that creates two Rectangle objects—one with width 4 and height 40, and
+//three objectives
+//Programming Exercises 385 the other with width 3.5 and height 35.9. Display the width, height, area, and
+//perimeter of each rectangle in this order.
+
+
+public class Rectangle {
+
+    private double width = 1;
+    private double height = 1;
+    private static int count;
+
+    {
+        count++;
+    }
+
+    // static initialization: bij eerste rectangle komt count op nul te staan
+    static {
+        count = 0;
+    }
+
+    // construct rectangle
+    public Rectangle(double newWidth, double newHeight) {
+        width = newWidth;
+        height = newHeight;
+    }
+
+    public double getWidth() {
+        return width;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public int getCount() {
+        return count;
+    }
+}
+
+
+// -----
+
+
+public class TestProgram {
+        public static void main(String[] args) {
+
+            //Create rectangle with width 4 and height 40
+            Rectangle rectangle1 = new Rectangle(4, 40);
+
+            //Create rectangle with width 3.5 and height 35.9
+            Rectangle rectangle2 = new Rectangle(3.5, 35.9);
+
+            //print width, height, area and perimeter of rectangle1
+            System.out.println("Rectangle 1 has a width of " + rectangle1.getWidth() + ", a height of " + rectangle1.getHeight() + "." + ".");
+            System.out.println("The area is " + rectangle1.getArea() + ", and the perimeter is " + rectangle1.getPerimeter() + ".");
+
+            //print width, height, area and perimeter of rectangle2
+            System.out.println("Rectangle 2 has a width of " + rectangle2.getWidth() + ", a height of " + rectangle2.getHeight() + "." + ".");
+            System.out.println("The area is " + rectangle2.getArea() + ", and the perimeter is " + rectangle2.getPerimeter() + ".");
+        }
+    }
