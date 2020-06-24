@@ -1,0 +1,70 @@
+package be.vdab.dag7;
+//ok  Maak een klasse Shape.
+//ok	Maak de overige klassen tot subklassen van de klasse Shape.
+//	Verplaats de eigenschappen van de x en y van de klassen Rectangle en Circle naar de klasse Shape.
+//	Verplaats ook de methoden voor het zetten en opvragen van de positie naar de klasse Shape.
+//	Maak in de klasse Shape de methode getCount() om het aantal figuren op te vragen.
+//	Maak een klasse Triangle en IsoscelesTriangle. De eigenschappen perpendicular is het punt waar de loodlijn de basis snijdt. Voor de berekening van oppervlakte en omtrek kan je gebruik maken van de klasse Math.
+//	Maak een nieuw hoofdprogramma waarin een aantal rechthoeken, vierkanten en cirkels gemaakt worden (ShapeApp.java) en waarbij de verschillende eigenschappen op het scherm worden afgedrukt.
+
+
+public class Shape {
+    int =
+
+    count();
+
+    int x = 0;
+    int y = 0;
+}
+
+// ---
+
+public class Rectangle extends Shape {
+
+// private var
+// constructor
+// return
+// set
+// return
+// set
+// return
+
+}
+
+                  // ---
+                  
+                  public class Square extends Rectangle {
+}
+
+// ---
+
+public class Circle extends Shape {
+
+// private var
+// constructor
+// return
+// set
+// return
+// set
+// return
+
+}
+
+// ---
+
+public class Triangle extends Shape {
+
+// private var
+// constructor
+// return
+// set
+// return
+// set
+// return
+
+}
+
+                  // ---
+                  public class IsoScalesTriangle extends Triangle {
+}
+
